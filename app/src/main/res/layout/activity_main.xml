@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/team_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/team_one"
+        android:inputType="textPersonName"
+        android:text="@string/teamOne_name"
+        android:textColor="#5E000000"
+        app:layout_constraintBottom_toTopOf="@+id/team_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/team_one_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.20999998"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/team_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/team_two"
+        android:inputType="textPersonName"
+        android:text="@string/teamTwo_name"
+        android:textColor="#5E000000"
+        app:layout_constraintBottom_toTopOf="@+id/select_team"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/team_two_label"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_one" />
+
+    <TextView
+        android:id="@+id/result_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/result_here"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display4"
+        android:textColor="#1128AC"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.42000002" />
+
+    <Button
+        android:id="@+id/select_team"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/select_random_team"
+        app:layout_constraintBottom_toTopOf="@+id/result_here"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/team_two"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/team_one_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_one"
+        app:layout_constraintBottom_toBottomOf="@+id/team_one"
+        app:layout_constraintEnd_toStartOf="@+id/team_one"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/team_one" />
+
+    <TextView
+        android:id="@+id/team_two_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/team_two"
+        app:layout_constraintBottom_toBottomOf="@+id/team_two"
+        app:layout_constraintEnd_toStartOf="@+id/team_two"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/team_two" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

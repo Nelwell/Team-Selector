@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TeamSelector</string>
+    <string name="teamTwo_name" />
+    <string name="teamOne_name" />
+    <string name="select_random_team">SELECT RANDOM TEAM</string>
+    <string name="result_here" />
+    <string name="team_one">Team 1</string>
+    <string name="team_two">Team 2</string>
+</resources>
