@@ -61,5 +61,16 @@ public class MainActivity extends AppCompatActivity {
         // Added "refresh" animation to make it clear when Team Selection Button is pressed, even with same result
         result.setAlpha(0);
         result.animate().alpha(1);
+        // Changes result text to corresponding team color if patriots or vikings are chosen
+        if (result.getText().toString().toLowerCase().equals("patriots")) {
+            int patriotsColorValue = getResources().getColor(R.color.patriots);
+            result.setTextColor(patriotsColorValue);
+        } else if (result.getText().toString().toLowerCase().equals("vikings")) {
+            int vikingsColorValue = getResources().getColor(R.color.vikings);
+            result.setTextColor(vikingsColorValue);
+        } else {
+            int defaultColorValue = getResources().getColor(R.color.other);
+            result.setTextColor(defaultColorValue);
+        }
     }
 }
